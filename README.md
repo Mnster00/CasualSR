@@ -23,3 +23,11 @@ numpy>=1.19.2
 opencv-python>=4.5.3
 pillow>=8.3.1
 clip @ git+https://github.com/openai/CLIP.git
+
+## Training
+
+python train.py --config configs/train_config.yaml
+
+## Testing
+
+python test.py --model path/to/checkpoint.pth --input path/to/image.png
